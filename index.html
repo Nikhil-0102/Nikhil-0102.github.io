@@ -5,35 +5,71 @@
 
     <style>
         body {
-            font-family: Arial;
+            font-family: Arial, sans-serif;
             margin: 0;
-            background: #f4f4f4;
+            background: linear-gradient(to right, #ece9e6, #ffffff);
         }
 
         header {
-            background: #2c3e50;
+            background: #1e3c72;
             color: white;
-            padding: 30px;
             text-align: center;
+            padding: 50px 20px;
         }
 
-        section {
-            padding: 40px;
-            margin: 20px;
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        header p {
+            font-size: 18px;
+            opacity: 0.8;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
             background: white;
-            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.02);
         }
 
         h2 {
-            color: #2c3e50;
+            color: #1e3c72;
         }
 
         footer {
             text-align: center;
             padding: 20px;
-            background: #2c3e50;
+            background: #1e3c72;
             color: white;
-            margin-top: 20px;
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #1e3c72;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background: #16325c;
         }
     </style>
 
@@ -42,32 +78,37 @@
 <body>
 
 <header>
-    <h1>My Portfolio 🚀</h1>
-    <p>Web Developer in Progress</p>
+    <h1>Hi, I'm a Developer 🚀</h1>
+    <p>Learning Cloud + Web Development</p>
 </header>
 
-<section>
-    <h2>About Me</h2>
-    <p>Hello! I am learning AWS and web development. This is my first portfolio website.</p>
-</section>
+<div class="container">
 
-<section>
-    <h2>Skills</h2>
-    <p>HTML, CSS, AWS Basics</p>
-</section>
+    <div class="card">
+        <h2>About Me</h2>
+        <p>I am learning AWS Cloud and building real-world projects step by step.</p>
+    </div>
 
-<section>
-    <h2>Projects</h2>
-    <p>Static Website Hosting using GitHub Pages</p>
-</section>
+    <div class="card">
+        <h2>Skills</h2>
+        <p>HTML, CSS, AWS Basics, GitHub Pages</p>
+    </div>
 
-<section>
-    <h2>Contact</h2>
-    <p>Email: 0102nikhil@gmail.com</p>
-</section>
+    <div class="card">
+        <h2>Project</h2>
+        <p>Hosted my first static website using GitHub Pages.</p>
+        <a class="btn" href="#">View Project</a>
+    </div>
+
+    <div class="card">
+        <h2>Contact</h2>
+        <p>Email: yourname@email.com</p>
+    </div>
+
+</div>
 
 <footer>
-    <p>© 2026 My Portfolio</p>
+    © 2026 My Portfolio | Built with ❤️
 </footer>
 
 </body>
